@@ -1,3 +1,3 @@
-backbone-marionette-requirejs-grid
+gridly
 ==================================
-backbone, marionette, requirejs, bootstrap grid
+Clean and simple grid or table using backbone, marionette, requirejs, bootstrap.
