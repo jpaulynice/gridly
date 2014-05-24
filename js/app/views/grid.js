@@ -34,18 +34,11 @@ define([ 'jquery',
 			collectionView.$("tbody").append(itemView.el);
 		},
 
-		sortAsc : function(e) {
+		sort : function(e, position) {
 			e.preventDefault();
 			e.stopPropagation();
 			var sortBy = $(e.currentTarget).data("sortby");
-			this.collection.sortByField(sortBy,'asc');
-		},
-
-		sortDesc : function(e) {
-			e.preventDefault();
-			e.stopPropagation();
-			var sortBy = $(e.currentTarget).data("sortby");
-			this.collection.sortByField(sortBy,'desc');
+			this.collection.sortByField(sortBy,position);
 		}
 	});
 

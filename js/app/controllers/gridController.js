@@ -28,7 +28,7 @@ define( [ 'jquery',
 					});
 				});
 
-				var gridView = new Grid( {
+				var gridView = new Grid({
 					collection : persons,
 					headers : headers
 				});
