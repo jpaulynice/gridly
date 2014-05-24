@@ -7,4 +7,4 @@ All javascript and hbs files are minified and combined into 'script.min.js' file
 
 Screenshot
 ==========
-![Settings Window](https://raw.github.com/julesbond007/gridly/master/gridly/docs/screenshot.png)
+![Settings Window](https://raw.github.com/julesbond007/gridly/master/docs/gridly.png)
