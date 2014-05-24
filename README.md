@@ -13,6 +13,7 @@ Screenshot
 
 Example Usage
 =============
+```javascript
 
 <div class="highlight highlight-javascript">
 <pre>
