@@ -17,8 +17,7 @@ define([ 'jquery',
 		itemView : GridRow,
 
 		events : {
-			"click .fa-sort-asc" : "sort",
-			"click .fa-sort-desc" : "sort"
+			"click .icon-sort" : "sort"
 		},
 
 		initialize : function(options) {
@@ -30,10 +29,19 @@ define([ 'jquery',
 			}
 		},
 
+		/**
+		 * Append child views in the 'tbody' tag
+		 * 
+		 */
 		appendHtml : function(collectionView, itemView) {
 			collectionView.$("tbody").append(itemView.el);
 		},
 
+		/**
+		 * Method to sort our grid by fieldName and direction: ascending or descending depending
+		 * on what the user clicks.
+		 * 
+		 */
 		sort : function(e) {
 			e.preventDefault();
 			e.stopPropagation();
