@@ -15,7 +15,6 @@ Example Usage
 =============
 ```javascript
 
-<div class="highlight highlight-javascript">
 <pre>
 /**
  * Grid controller to handle showing grid data.  Using
