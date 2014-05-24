@@ -14,7 +14,7 @@ Screenshot
 Example Usage
 =============
 
-<div class="highglight highlight-javascript">
+<div class="highlight highlight-javascript">
 <pre>
 /**
  * Grid controller to handle showing grid data.  Using
