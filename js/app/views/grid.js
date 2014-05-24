@@ -17,8 +17,8 @@ define([ 'jquery',
 		itemView : GridRow,
 
 		events : {
-			"click .fa-sort-asc" : "sortAsc",
-			"click .fa-sort-desc" : "sortDesc"
+			"click .fa-sort-asc" : "sort",
+			"click .fa-sort-desc" : "sort"
 		},
 
 		initialize : function(options) {
@@ -34,11 +34,13 @@ define([ 'jquery',
 			collectionView.$("tbody").append(itemView.el);
 		},
 
-		sort : function(e, position) {
+		sort : function(e) {
 			e.preventDefault();
 			e.stopPropagation();
 			var sortBy = $(e.currentTarget).data("sortby");
-			this.collection.sortByField(sortBy,position);
+			var sortPos = $(e.currentTarget).data("sortpos");
+
+			this.collection.sortByField(sortBy,sortPos);
 		}
 	});
 
