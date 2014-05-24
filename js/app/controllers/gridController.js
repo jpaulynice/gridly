@@ -40,7 +40,7 @@ define( [ 'jquery',
 			
 			//if the number of rows is greater than 0
 			//create columns and rows for the grid
-			if (data && data.rows.length > 0) {
+			if (data.rows && data.rows.length > 0) {
 				var columns = _.keys(data.rows[0])
 
 				var rows = new RowCollection(data.rows);
