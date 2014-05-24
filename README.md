@@ -14,6 +14,7 @@ Screenshot
 Example Usage
 =============
 
+<div class="highglight highlight-javascript">
 <pre>
 /**
  * Grid controller to handle showing grid data.  Using
@@ -89,3 +90,4 @@ define( [ 'jquery',
   return GridController;
 });
 </pre>
+</div>
