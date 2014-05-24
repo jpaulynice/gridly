@@ -24,14 +24,14 @@ define([ 'jquery',
 			_.bindAll(this, "render");
 			this.listenTo(this.collection, 'reset sort', this.render);
 			this.model = new Backbone.Model();
-			if (options.headers) {
-				this.model.set('headers', options.headers);
+			if (options.columns) {
+				this.model.set('columns', options.columns);
 			}
 		},
 
 		/**
 		 * Append child views in the 'tbody' tag
-		 * 
+		 *
 		 */
 		appendHtml : function(collectionView, itemView) {
 			collectionView.$("tbody").append(itemView.el);
@@ -40,7 +40,7 @@ define([ 'jquery',
 		/**
 		 * Method to sort our grid by fieldName and direction: ascending or descending depending
 		 * on what the user clicks.
-		 * 
+		 *
 		 */
 		sort : function(e) {
 			e.preventDefault();
