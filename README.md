@@ -10,14 +10,17 @@ Screenshot
 ==========
 ![Settings Window](https://raw.github.com/julesbond007/gridly/master/docs/gridly.png)
 
-
 Example Usage
 =============
+```javascript
 
+<<<<<<< HEAD
 ```javascript
 
 <div class="highglight highlight-javascript">
 <pre>
+=======
+>>>>>>> c0a4ec4165e1f8dc39a5e20ad2e7e598e3128c62
 /**
  * Grid controller to handle showing grid data.  Using
  * RequireJS, we pass our grid and data as dependencies.
@@ -91,5 +94,3 @@ define( [ 'jquery',
 
   return GridController;
 });
-</pre>
-</div>
