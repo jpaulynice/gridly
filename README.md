@@ -1,11 +1,13 @@
 gridly
 ==================================
+```javascript
 
 Clean and simple grid using backbone, marionette, requirejs, and bootstrap.  The grid is sortable and has drag and drop functionality to rearrange the rows.
 
 All javascript and hbs files are minified using r.js optimizer and Node:
 <pre>
 node r.js -o gridly/js/build.js
+
 //output
 'gridly/js/script.min.js'
 </pre>
@@ -16,7 +18,6 @@ Screenshot
 
 Example Usage
 =============
-```javascript
 /**
  * Create requirejs module and add grid and collection of data
  * as dependencies.
