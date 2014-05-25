@@ -1,10 +1,12 @@
 <thead>
 <tr>
 	{{#each columns}}
-      	<th>
-      		{{this}}
-			<i data-sortdir="desc" data-sortby="{{this}}" class="icon-sort fa fa-sort-asc"></i>
-			<i data-sortdir="asc" data-sortby="{{this}}" class="icon-sort fa fa-sort-desc"></i>
+      <th>
+					{{#if this}}
+      			{{this}}
+						<i data-sortdir="desc" data-sortby="{{this}}" class="icon-sort fa fa-sort-asc"></i>
+						<i data-sortdir="asc" data-sortby="{{this}}" class="icon-sort fa fa-sort-desc"></i>
+					{{/if}}
 		</th>
 	{{/each}}
 </tr>

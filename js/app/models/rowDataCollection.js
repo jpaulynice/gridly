@@ -8,26 +8,35 @@ define([ 'jquery',
          function($, _, Backbone,RowData) {
 
     /**
-    * Represents a collection of rows in the grid
-    * and has method to sort the row collection by a 
-    * field and descending or ascending.
+    * Represents a collection of rows data in the grid
+    * and has method to sort the row collection by a
+    * field descending or ascending.
     *
     */
 	var RowDataCollection = Backbone.Collection.extend({
 	    model: RowData,
 
-	    /** 
-	    * comparator for desc. only works 
+	    /**
+	    * comparator for desc. only works
 	    * for integer values for now.  Needs
 	    * to be fixed for string and other
 	    * data types.
 		*
 	    */
 	    comparatorDesc: function(item) {
-	        return -item.get(this.sort_key);
+	        var value = item.get(this.sort_key);
+	        if(isNaN(value)){
+	        	value = item.get(this.sort_key).toLowerCase().split("");
+            value = _.map(value, function(letter){
+              return String.fromCharCode(-(letter.charCodeAt(0)));
+            });
+            return value;
+	        }else{
+            return -value;
+	        }
 	    },
 
-	    /** 
+	    /**
 	    * comparator for asc.
 		*
 	    */
@@ -38,7 +47,7 @@ define([ 'jquery',
 	    /**
 	    * Calling this method sets the comparator dynamically
 	    * and add field and direction for sorting.
-	    * 
+	    *
 	    */
 	    sortByField: function(fieldName, direction) {
 	        this.sort_key = fieldName;
