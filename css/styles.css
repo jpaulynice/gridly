@@ -25,3 +25,8 @@ a.navbar-brand{
 	float:right;
 	color:gray;
 }
+
+.fa-arrows:hover{
+	cursor:hand;
+	cursor:pointer;
+}
