@@ -22,7 +22,7 @@ define([ 'jquery',
 
 		initialize : function(options) {
 			_.bindAll(this, "render");
-			this.listenTo(this.collection, 'reset sort', this.render);
+			this.listenTo(this.collection, 'reset sort change', this.render);
 			this.model = new Backbone.Model();
 			if (options.columns) {
 				this.model.set('columns', options.columns);
