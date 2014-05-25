@@ -11,14 +11,14 @@ define( [ 'jquery',
           'backbone',
           'marionette',
           'app/views/grid',
-          'app/models/rows',
+          'app/models/rowDataCollection',
           'app/views/emptyView'],
           function($, _, Backbone, Marionette, Grid,RowCollection,EmptyView) {
 
 	/**
 	 * GridController extends Marionette.Controller and is simply
-   * a way to manage our views and models.  Here we get the data
-   * for the grid, create the grid and show it.
+	 * a way to manage our views and models.  Here we get the data
+	 * for the grid, create the grid and show it.
 	 *
 	 */
 	var GridController = Backbone.Marionette.Controller.extend( {

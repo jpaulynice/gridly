@@ -1,5 +1,5 @@
 /**
- * Represents a requirejs module for a dynamic Grid or Table
+ * Represents a requirejs module for a dynamic Grid.
  */
 
 define([ 'jquery',
@@ -46,9 +46,9 @@ define([ 'jquery',
 			e.preventDefault();
 			e.stopPropagation();
 			var sortBy = $(e.currentTarget).data("sortby");
-			var sortPos = $(e.currentTarget).data("sortpos");
+			var direction = $(e.currentTarget).data("sortdir");
 
-			this.collection.sortByField(sortBy,sortPos);
+			this.collection.sortByField(sortBy,direction);
 		}
 	});
 
