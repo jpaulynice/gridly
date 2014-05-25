@@ -19,7 +19,7 @@ define([ 'jquery',
 			"dragstart": "start",
       		"dragenter": "enter",
     		"dragleave": "leave",
-      		"dragend": "leave",
+     		"dragend": "leave",
       		"dragover": "over",
       		"drop": "drop"
 		},
