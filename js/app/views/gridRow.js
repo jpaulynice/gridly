@@ -11,9 +11,9 @@ define([ 'jquery',
 	var GridRow = Backbone.Marionette.ItemView.extend({
 		template : gridRowTemplate,
 		tagName : "tr",
-    attributes:{
-      draggable:true
-    }
+	    attributes:{
+	      draggable:true
+	    }
 	});
 
 	return GridRow;
