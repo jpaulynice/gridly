@@ -1,7 +1,10 @@
 <thead>
 <tr>
 	{{#each columns}}
-      	<th>{{this}} <i data-sortpos="desc" data-sortby="{{this}}" class="icon-sort fa fa-sort-asc"></i><i data-sortpos="asc" data-sortby="{{this}}" class="icon-sort fa fa-sort-desc"></i></th>
+      	<th>{{this}}
+					<i data-sortDir="desc" data-sortby="{{this}}" class="icon-sort fa fa-sort-asc"></i>
+					<i data-sortDir="asc" data-sortby="{{this}}" class="icon-sort fa fa-sort-desc"></i>
+				</th>
 	{{/each}}
 </tr>
 </thead>

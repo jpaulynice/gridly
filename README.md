@@ -14,6 +14,8 @@ Screenshot
 Example Usage
 =============
 
+```javascript
+
 <div class="highglight highlight-javascript">
 <pre>
 /**

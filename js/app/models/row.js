@@ -2,7 +2,7 @@ define([ 'jquery',
          'underscore',
          'backbone'],
          function($, _, Backbone) {
-  var Person = Backbone.Model.extend({});
+  var Row = Backbone.Model.extend({});
 
-  return Person;
+  return Row;
 });
