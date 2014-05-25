@@ -25,5 +25,5 @@ define([ 'jquery',
 	    }
 	});
 
-	return Persons;
+	return Rows;
 });
