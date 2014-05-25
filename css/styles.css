@@ -26,7 +26,16 @@ a.navbar-brand{
 	color:gray;
 }
 
+.icon-sort:hover{
+	cursor:hand;
+	cursor:pointer;
+}
+
 .fa-arrows:hover{
 	cursor:hand;
 	cursor:pointer;
+}
+
+.drop-over{
+	background:yellow;
 }
