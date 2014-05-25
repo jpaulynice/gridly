@@ -9,7 +9,7 @@ define([ 'jquery',
   /**
   * Represents a single row of data in a grid.
   */
-  var Row = Backbone.Model.extend({});
+  var RowData = Backbone.Model.extend({});
 
-  return Row;
+  return RowData;
 });
