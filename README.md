@@ -1,6 +1,5 @@
 gridly
 ==================================
-```javascript
 
 Clean and simple grid using backbone, marionette, requirejs, and bootstrap.  The grid is sortable and has drag and drop functionality to rearrange the rows.
 
@@ -18,6 +17,7 @@ Screenshot
 
 Example Usage
 =============
+```javascript
 /**
  * Create requirejs module and add grid and collection of data
  * as dependencies.
