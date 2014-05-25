@@ -14,11 +14,8 @@ Example Usage
 =============
 ```javascript
 /**
- * Grid controller to handle showing grid data.  Using
- * RequireJS, we pass our grid and data as dependencies.
- * The location, data, and columns to show the grid is
- * passed as an option in the initialize method of the
- * GridController.
+ * Create requirejs module and add grid and collection of data
+ * as dependencies.
  *
  */
 define( [ 'jquery',
@@ -26,12 +23,14 @@ define( [ 'jquery',
           'backbone',
           'marionette',
           'app/views/grid',
-          'app/models/persons',
+          'app/models/rowDataCollection',
           'app/views/emptyView'],
           function($, _, Backbone, Marionette, Grid,RowCollection,EmptyView) {
 
   /**
-   * Extend Marionette Controller
+   * GridController extends Marionette.Controller and is simply
+   * a way to manage our views and models.  Here we get the data
+   * for the grid, create the grid and show it.
    *
    */
   var GridController = Backbone.Marionette.Controller.extend( {
