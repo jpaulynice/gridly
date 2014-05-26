@@ -6,14 +6,14 @@
  * GridController.
  *
  */
-define( [ 'jquery',
-          'underscore',
-          'backbone',
-          'marionette',
+define( [ 'jquery', 
+          'underscore', 
+          'backbone', 
+          'marionette', 
           'app/views/grid',
-          'app/models/rowDataCollection',
-          'app/views/emptyView'],
-          function($, _, Backbone, Marionette, Grid,RowCollection,EmptyView) {
+          'app/models/rowDataCollection', 
+          'app/views/emptyView' ],
+          function($, _,Backbone, Marionette, Grid, RowCollection, EmptyView) {
 
 	/**
 	 * GridController extends Marionette.Controller and is simply
@@ -39,40 +39,40 @@ define( [ 'jquery',
 		showGrid : function(data) {
 			//region to show the grid
 			var gridRegion = data.gridRegion;
-
+	
 			//if the number of rows is greater than 0
 			//create columns and rows for the grid
 			if (data.rows && data.rows.length > 0) {
-	        	var columns = [];
-	        	columns.push('');
-				_.each(_.keys(data.rows[0]), function(column){
-	          		columns.push(column);
-	        	});
-	        	columns.push('');
-
+				var columns = [];
+				columns.push('');
+				_.each(_.keys(data.rows[0]), function(column) {
+					columns.push(column);
+				});
+				columns.push('');
+	
 				var rows = new RowCollection(data.rows);
-
+	
 				//set fields to display in each model
 				_.each(rows.models, function(row) {
 					row.set( {
 						'displayFields' : _.values(row.attributes)
 					});
 				});
-
+	
 				//create new grid
 				var grid = new Grid( {
 					columns : columns,
 					collection : rows
 				});
-
+	
 				//show the grid
 				gridRegion.show(grid);
-			}else{
+			} else {
 				//show empty view
 				var emptyView = new EmptyView();
 				gridRegion.show(emptyView);
 			}
-		}
+	}
 
 	});
 
