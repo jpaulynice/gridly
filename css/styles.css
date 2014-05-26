@@ -14,7 +14,7 @@ a.navbar-brand{
 	float:right;
 }
 
-.gridRegion{
+.panel-default{
 	width: 900px;
 	margin-top: 100px;
 	margin-right: auto;
@@ -38,4 +38,8 @@ a.navbar-brand{
 
 .drop-over{
 	background:yellow;
+}
+
+.fa-gear{
+	float:right;
 }

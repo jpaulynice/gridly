@@ -9,11 +9,17 @@
 		<title>Gridly</title>
 	</head>
 	<body>
-		<div class="gridRegion">
+		<div class="panel panel-default">
+			<div class="panel-heading">Title			
+				<i class="fa fa-gear"> </i>
+			</div>
+			<div class="gridRegion">
+			</div>
 		</div>
-		<!--production minified/combined js file-->
-		<script src="js/script.min.js"></script>
-		<!--development js files--needs to be run in a server like apache, nginx,etc.
-		<script data-main="js/main" src="js/lib/require.js"></script>-->
+		<!--production minified/combined js file
+		<script src="js/script.min.js"></script>-->
+		<!--development js files--needs to be run in a server like apache, tomcat, nginx,etc. 
+			due to cross-domain security-->
+		<script data-main="js/main" src="js/lib/require.js"></script>
 	</body>
 </html>
