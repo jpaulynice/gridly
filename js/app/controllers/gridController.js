@@ -45,8 +45,8 @@ define( [ 'jquery',
 			if (data.rows && data.rows.length > 0) {
 	        	var columns = [];
 	        	columns.push('');
-	        	var keys = _.keys(data.rows[0];
-				_.each(_.keys(keys, function(column){
+	        	var keyArray = _.keys(data.rows[0]);
+				_.each(keyArray, function(column){
 	          		columns.push(column);
 	        	});
 	        	columns.push('');
