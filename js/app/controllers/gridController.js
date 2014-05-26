@@ -44,11 +44,13 @@ define( [ 'jquery',
 			//create columns and rows for the grid
 			if (data.rows && data.rows.length > 0) {
 	        	var columns = [];
+	        	//empty header for select checkboxes
 	        	columns.push('');
 	        	var keyArray = _.keys(data.rows[0]);
 				_.each(keyArray, function(column){
 	          		columns.push(column);
 	        	});
+	        	//empty header for drag/drop icons
 	        	columns.push('');
 
 				var rows = new RowCollection(data.rows);
