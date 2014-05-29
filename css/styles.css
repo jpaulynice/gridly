@@ -26,11 +26,8 @@ a.navbar-brand{
 	color:gray;
 }
 
-.icon-sort:hover{
-	cursor:hand;
-	cursor:pointer;
-}
-
+.icon-sort:hover,
+.fa-gear:hover,
 .fa-arrows:hover{
 	cursor:hand;
 	cursor:pointer;
