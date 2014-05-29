@@ -13,7 +13,7 @@ node r.js -o gridly/js/build.js
 
 Screenshot
 ==========
-![Settings Window](https://raw.github.com/julesbond007/gridly/master/docs/gridly.png)
+![Settings Window](https://raw.github.com/julesbond007/gridly/master/docs/screenshots/gridly.png)
 
 Example Usage
 =============
