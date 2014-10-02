@@ -90,3 +90,4 @@ define( [ 'jquery',
 
   return GridController;
 });
+```
