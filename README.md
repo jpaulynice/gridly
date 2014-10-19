@@ -5,8 +5,8 @@ Clean and simple grid using backbone, marionette, requirejs, and bootstrap.  The
 
 All javascript and hbs files are minified using r.js optimizer and Node:
 ```bash
-cd gridly/js
-node r.js -o build.js
+$ cd gridly/js
+$ node r.js -o build.js
 
 //output
 'gridly/js/script.min.js'
