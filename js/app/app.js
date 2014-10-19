@@ -81,8 +81,7 @@ define(['jquery',
                 has_nose : 'NULL'
             }]
         };
+        new GridController(data);
     });
-    new GridController(data);
-
     return App;
 });
