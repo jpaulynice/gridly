@@ -13,7 +13,7 @@ define( [ 'jquery',
 	 * field descending or ascending.
 	 *
 	 */
-	var RowDataCollection = Backbone.Collection.extend( {
+	return Backbone.Collection.extend( {
 		model : RowData,
 
 		/**
@@ -51,7 +51,7 @@ define( [ 'jquery',
 		 */
 		sortByField : function(fieldName, direction) {
 			this.sort_key = fieldName;
-			if (direction && direction === 'asc') {
+			if (direction && direction == 'asc') {
 				this.comparator = this.comparatorAsc;
 			} else {
 				this.comparator = this.comparatorDesc;
@@ -59,6 +59,4 @@ define( [ 'jquery',
 			this.sort();
 		}
 	});
-
-	return RowDataCollection;
 });

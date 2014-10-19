@@ -8,9 +8,7 @@ define([ 'jquery',
          'hbs!app/templates/grid/emptyTemplate' ], 
          function($, _, Backbone,Marionette, emptyTemplate) {
 
-	var EmptyView = Backbone.Marionette.ItemView.extend({
+	return Backbone.Marionette.ItemView.extend({
 		template : emptyTemplate
 	});
-
-	return EmptyView;
 });
