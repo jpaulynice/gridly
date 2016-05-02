@@ -20,9 +20,7 @@ Example Usage
 =============
 ```javascript
 /**
- * Create requirejs module and add grid and collection of data
- * as dependencies.
- *
+ * Create requirejs module and add grid and collection of data as dependencies
  */
 define( [ 'jquery',
           'underscore',
@@ -34,16 +32,14 @@ define( [ 'jquery',
           function($, _, Backbone, Marionette, Grid,RowCollection,EmptyView) {
 
   /**
-   * GridController extends Marionette.Controller and is simply
-   * a way to manage our views and models.  Here we get the data
-   * for the grid, create the grid and show it.
-   *
+   * GridController extends Marionette.Controller and is simply a way to manage our 
+   * views and models.  Here we get the data for the grid, create the grid and show it.
    */
-  var GridController = Backbone.Marionette.Controller.extend( {
+  return Backbone.Marionette.Controller.extend( {
 
     /**
-     * Default constructor to pass data we're interested in
-     * Such as region to show the grid, rows, and columns
+     * Default constructor to pass data we're interested in Such as region to show the 
+     * grid, rows, and columns
      *
      */
     initialize : function(options) {
@@ -52,15 +48,13 @@ define( [ 'jquery',
 
     /**
      * Handle showing of the grid with 'displayFields' and columns
-     *
      */
     showGrid : function(data) {
       //region to show the grid
       var gridRegion = data.gridRegion;
 
-      //if the number of rows is greater than 0
-      //create columns and rows for the grid
-      if (data.rows && data.rows.length > 0) {
+      //if the number of rows is greater than 0 create columns and rows for the grid
+      if (data && data.rows && data.rows.length > 0) {
         var columns = _.keys(data.rows[0])
 
         var rows = new RowCollection(data.rows);
@@ -80,15 +74,12 @@ define( [ 'jquery',
 
         //show the grid
         gridRegion.show(grid);
-      }else{
+      }else {
         //show empty view
         var emptyView = new EmptyView();
         gridRegion.show(emptyView);
       }
     }
-
   });
-
-  return GridController;
 });
 ```
